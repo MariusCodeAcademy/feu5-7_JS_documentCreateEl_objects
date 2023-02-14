@@ -44,7 +44,7 @@ const randArray = ['5',''true', -12, 74, 'james', -7,'bond', 0, 49];
 
 6.1 sukurti funkcija printAndFindMin('Maziausia reiksme') kuria iskvietus ji sukuria [6] punkte parasyta struktura ir i antraste iraso argumento texta
 
-6.1 sukurti tokia pat kaip [6.1] funkcija surasti diziausiai reiksmei
+6.2 sukurti tokia pat kaip [6.1] funkcija surasti diziausiai reiksmei
 
 7. htmle sukurti section elementa ir uzdeti jam id ir klase. klase turetu ijungti flex arba grid. I vidu generuojam paveikslelius is sio masyvo
 
