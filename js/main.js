@@ -56,8 +56,13 @@ const divEl = document.createElement('div');
 const h3El1 = document.createElement('h3');
 h3El1.textContent = 'hello';
 
+const linkEl = document.createElement('a');
+linkEl.textContent = 'read more...';
+linkEl.href = '#';
+
 // ideti h3 el i div
-divEl.append(h3El1);
+divEl.append(h3El1, linkEl);
+// divEl.append(linkEl);
 
 // div ideti i conteineri
 appContainer.append(divEl);
