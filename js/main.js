@@ -1,6 +1,9 @@
 'use strict';
 console.log('main.js file was loaded');
 
+// nusitaikymai
+const appContainer = document.getElementById('app');
+
 // document.createElement(tagName)
 
 // 1. sukuriam h2 el
@@ -14,4 +17,16 @@ console.log(h2El);
 // parent.append(newEl)
 document.body.append(h2El);
 
-document.getElementById('app').append(h2El);
+appContainer.append(h2El);
+
+// sukurti paragrapha
+// ideti teksta "as esu nauja p elementas"
+// patalpinti i document.getElementById('app')
+
+const pEl = document.createElement('p');
+pEl.textContent = 'as esu nauja p elementas';
+appContainer.append(pEl);
+
+// ta pacia eiga, sukurti
+// 1. mygtuka kuris sako 'spausti cia' ir patalpinti i ta pati konteineri
+// 2. h3 elementa su tekstu 'nauja antraste' ir patalpinti i ta pati konteineri
