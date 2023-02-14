@@ -5,7 +5,13 @@ console.log('list.js file was loaded');
 const appContainer = document.getElementById('app');
 
 // HELPER FUNCTIONS LIST =========================
-
+function crElement(tagName, tagText) {
+  // -- sukuriam li
+  const newEl = document.createElement(tagName);
+  // -- pridedam text
+  newEl.textContent = tagText;
+  return newEl;
+}
 // HELPER FUNCTIONS LIST END =========================
 
 const shopingList = ['milk', 'crosaint', 'snikers', 'lemonade'];
@@ -26,10 +32,11 @@ const ulEl = document.createElement('ol');
 for (let i = 0; i < shopingList.length; i++) {
   let oneShoppingItemValue = shopingList[i];
 
-  // -- sukuriam li
-  const liEl = document.createElement('li');
-  // -- pridedam text
-  liEl.textContent = oneShoppingItemValue;
+  // // -- sukuriam li
+  // const liEl = document.createElement('li');
+  // // -- pridedam text
+  // liEl.textContent = oneShoppingItemValue;
+  const liEl = crElement('li', oneShoppingItemValue);
   // -- patalpinam i ulEl
   ulEl.append(liEl);
 }
