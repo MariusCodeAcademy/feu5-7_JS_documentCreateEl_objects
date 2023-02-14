@@ -29,4 +29,19 @@ const skArray = [5, -12, 74, -7, 0, 49]
 2. atrinkti skaicius didesnius uz 5 sugeneruoti htmle ol sarasa
 3. atrinkti neigiamus skaicius ir surasyti juos i viena p elementa ir patalptinti html
 
-const randArray = ['5',''true', -12, 74, 'james', -7,'bond', 0, 49]
+const randArray = ['5',''true', -12, 74, 'james', -7,'bond', 0, 49];
+
+4. is randArray atrinkti skaicius ir atspausdinti ju suma h2 elemente, patalpinti html
+5. atrinkti string tipo reiksmes ir sugeneruoti ul sarasa patalpinti hmle, didziosiomis raidemis.
+6. is randArray atrinkti maziausia reiksme ir atspausdinti ja tokiu pavidalu
+
+```html
+<article>
+  <h2>Maziausia reiksme</h2>
+  <p>XX</p>
+</article>
+```
+
+6.1 sukurti funkcija printAndFindMin('Maziausia reiksme') kuria iskvietus ji sukuria [6] punkte parasyta struktura ir i antraste iraso argumento texta
+
+6.1 sukurti tokia pat kaip [6.1] funkcija surasti diziausiai reiksmei
