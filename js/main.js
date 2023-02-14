@@ -42,3 +42,22 @@ function newEl(tagName, tagText) {
 newEl('h3', 'nauja antraste');
 
 newEl('button', 'more info');
+
+/* 
+<div>
+  <h3>hello</h3>
+  <p>Sveiki from p</p>
+  <a href="#">read more</a>
+</div>
+*/
+
+const divEl = document.createElement('div');
+
+const h3El1 = document.createElement('h3');
+h3El1.textContent = 'hello';
+
+// ideti h3 el i div
+divEl.append(h3El1);
+
+// div ideti i conteineri
+appContainer.append(divEl);
