@@ -29,4 +29,16 @@ appContainer.append(pEl);
 
 // ta pacia eiga, sukurti
 // 1. mygtuka kuris sako 'spausti cia' ir patalpinti i ta pati konteineri
+const btnEl = document.createElement('button');
+btnEl.textContent = 'spausti cia';
+appContainer.append(btnEl);
+
+function newEl(tagName, tagText) {
+  const newElement = document.createElement(tagName);
+  newElement.textContent = tagText;
+  appContainer.append(newElement);
+}
 // 2. h3 elementa su tekstu 'nauja antraste' ir patalpinti i ta pati konteineri
+newEl('h3', 'nauja antraste');
+
+newEl('button', 'more info');
