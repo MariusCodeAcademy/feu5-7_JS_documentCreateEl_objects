@@ -25,6 +25,9 @@ const shopingList = ['milk', 'crosaint', 'snikers', 'lemonade'];
 </ul>
 */
 
+const h1El = crElement('h1', 'Document Create element');
+appContainer.append(h1El);
+
 // sukuriam ul
 
 const ulEl = crElement('ol');
