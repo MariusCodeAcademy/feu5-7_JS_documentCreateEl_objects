@@ -5,9 +5,10 @@ console.log('list.js file was loaded');
 const appContainer = document.getElementById('app');
 
 // HELPER FUNCTIONS LIST =========================
-function crElement(tagName, tagText) {
+function crElement(tagName, tagText = '') {
   // -- sukuriam li
   const newEl = document.createElement(tagName);
+
   // -- pridedam text
   newEl.textContent = tagText;
   return newEl;
@@ -26,7 +27,7 @@ const shopingList = ['milk', 'crosaint', 'snikers', 'lemonade'];
 
 // sukuriam ul
 
-const ulEl = document.createElement('ol');
+const ulEl = crElement('ol');
 
 // sukam cikla
 for (let i = 0; i < shopingList.length; i++) {
@@ -43,3 +44,12 @@ for (let i = 0; i < shopingList.length; i++) {
 
 // patalpinam ulEl i appContainer
 appContainer.append(ulEl);
+
+// sukurti div ir viduje paragrafa su mygtuku
+const divEl = crElement('div');
+const pEl = crElement('p', 'Sveiki sveiki');
+const btnEl = crElement('button', 'nespausti cia');
+divEl.append(pEl, btnEl);
+
+// patalpinam divEl i appContainer
+appContainer.append(divEl);
