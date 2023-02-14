@@ -41,8 +41,8 @@ const dayz = [
   'savaitgalis',
 ];
 
-function arrayToList(arr) {
-  const listEl = crElement('ul');
+function arrayToList(arr, listType = 'ul') {
+  const listEl = crElement(listType === 'ol' ? 'ol' : 'ul');
   for (let i = 0; i < arr.length; i++) {
     let dayValue = arr[i];
     // sukuriam dienos elementa su pavadinimu
@@ -54,3 +54,22 @@ function arrayToList(arr) {
 }
 
 arrayToList(dayz);
+arrayToList(dayz, 'ol');
+
+const elementsArr = ['red', 'green', 'blue'];
+
+arrayToList(elementsArr);
+
+const skArray = [5, -12, 74, -7, 0, 49];
+
+// 1. sugeneruoti ul sarasa is sio masyvo ir patalpinti htmle
+arrayToList(skArray);
+
+// 2. atrinkti skaicius didesnius uz 5 sugeneruoti htmle ol sarasa
+
+let skaicDaugUz5 = [];
+for (let i = 0; i < skArray.length; i++) {
+  let sk = skArray[i];
+  if (sk > 5) skaicDaugUz5.push(sk);
+}
+arrayToList(skaicDaugUz5, 'ol');
